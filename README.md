@@ -1,4 +1,4 @@
-# ✈️ MAPLOY — Travel Planner
+# MAPLOY — Travel Planner
 
 > 생성형 AI를 활용하여 제작한 React 기반 여행 계획 서비스
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 🌍 시스템 소개
+## 시스템 소개
 
 **MAPLOY**는 여행지, 날짜, 예산, 여행 스타일을 입력하면 맞춤형 여행 일정을 자동으로 생성해주는 웹 서비스입니다.
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 🛠️ 기술 스택
+## 기술 스택
 
 | 구분 | 기술 |
 |------|------|
@@ -30,7 +30,7 @@
 
 ---
 
-## ⚙️ GitHub Actions CI/CD 환경
+## GitHub Actions CI/CD 환경
 
 `.github/workflows/deploy.yml`에 정의된 파이프라인:
 
@@ -69,7 +69,7 @@ Repository → Settings → Secrets and variables → Actions
 
 ---
 
-## 📹 시연 영상
+## 시연 영상
 
 | 영상 | 링크 |
 |------|------|
@@ -78,6 +78,6 @@ Repository → Settings → Secrets and variables → Actions
 
 ---
 
-## 👨‍💻 개발자
+## 개발자
 
 **이동규** — 컴퓨터공학과
