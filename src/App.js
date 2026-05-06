@@ -307,7 +307,7 @@ export default function App() {
             </div>
 
             <header className="header">
-              <div className="logo">MAPLOY</div>
+              <div className="logo">travel-planner</div>
               <nav className="nav">
                 <span onClick={() => setPage("home")}>홈</span>
                 <span onClick={() => setPage("explore")}>여행지</span>
