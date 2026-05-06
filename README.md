@@ -61,7 +61,7 @@ Repository → Settings → Secrets and variables → Actions
 
 ---
 
-## 🌐 배포 URL
+## 배포 URL
 
 > ⚠️ AWS Academy 세션 기준 4시간만 유효합니다.
 
