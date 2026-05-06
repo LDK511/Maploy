@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# ✈️ MAPLOY — Travel Planner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 생성형 AI를 활용하여 제작한 React 기반 여행 계획 서비스
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react)
+![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions)
+![AWS Amplify](https://img.shields.io/badge/Hosting-AWS_Amplify-FF9900?style=flat-square&logo=aws-amplify)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌍 시스템 소개
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**MAPLOY**는 여행지, 날짜, 예산, 여행 스타일을 입력하면 맞춤형 여행 일정을 자동으로 생성해주는 웹 서비스입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🗺️ **6개 여행지 지원**: 도쿄, 파리, 발리, 뉴욕, 바르셀로나, 이스탄불
+- 🗓️ **맞춤 일정 생성**: 3일, 5일, 7일 일정 자동 생성
+- 💰 **예산 분석**: 여행 예산에 맞는 실용적인 비용 계획 제공
+- 🍽️ **현지 정보**: 대표 음식, 주요 명소, 여행 꿀팁 제공
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ 기술 스택
 
-### `npm run build`
+| 구분 | 기술 |
+|------|------|
+| Frontend | React 18, CSS3 |
+| CI/CD | GitHub Actions |
+| Hosting | AWS Amplify |
+| Font | Cormorant Garamond, Outfit |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ GitHub Actions CI/CD 환경
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`.github/workflows/deploy.yml`에 정의된 파이프라인:
 
-### `npm run eject`
+```
+Push to main
+    │
+    ▼
+[Build Job]
+├── Checkout code
+├── Setup Node.js 24
+├── npm ci
+└── npm run build
+    │
+    ▼
+Build Artifact 업로드 완료
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### GitHub Secrets 설정
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Repository → Settings → Secrets and variables → Actions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Secret | 설명 |
+|--------|------|
+| `AWS_ACCESS_KEY_ID` | AWS Access Key |
+| `AWS_SECRET_ACCESS_KEY` | AWS Secret Key |
+| `AWS_SESSION_TOKEN` | AWS Session Token |
+| `AWS_REGION` | `us-east-1` |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🌐 배포 URL
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> ⚠️ AWS Academy 세션 기준 4시간만 유효합니다.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**https://main.d3p0y9tcragi8.amplifyapp.com**
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📹 시연 영상
 
-### Analyzing the Bundle Size
+| 영상 | 링크 |
+|------|------|
+| GitHub Actions 활용 CI/CD 구축 시연 | [YouTube 바로가기](https://youtu.be/Xz90yoh0f-4) |
+| AWS Amplify 서비스 활용 시연 | [YouTube 바로가기](https://youtu.be/74fu73htkQM) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 👨‍💻 개발자
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**이동규** — 컴퓨터공학과
